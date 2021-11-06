@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <script>
+      // webpack会优先加载这个配置
       window.webpackChunkgetting_started_using_a_configuration = [
         [
+          // chunkIds
           ['firstOfAll'],
+          // moreModules
           {
-            __firstOfAll: (
-              __unused_webpack_module,
-              __unused_webpack_exports,
-              __webpack_require__
-            ) => {
+            __firstOfAll: () => {
               window.my_app_env = {
                 appName: 'my app name',
               };
             },
           },
+          // runtime
           function runtime() {},
         ],
       ];
     </script>
-  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+  </head>
   <body></body>
 </html>

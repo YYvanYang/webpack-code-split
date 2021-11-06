@@ -21,6 +21,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack Code Split',
+      template: 'index.html'
     }),
   ],
 };
